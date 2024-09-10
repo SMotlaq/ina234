@@ -34,7 +34,7 @@
  * MIT License
  *
  * @section start Getting Started
- * Go to [my Github page](https://github.com/SMotlaq) to get started. You can also see the [functions list](./ina234_8c.html) to learn more.
+ * Go to [my Github page](https://github.com/SMotlaq/ina234) to get started. You can also see the [functions list](./ina234_8c.html) to learn more.
  *
  */
 
