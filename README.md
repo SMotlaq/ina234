@@ -81,6 +81,60 @@ if(STATUS_OK == INA234_init(&ina234, 0x48, &hi2c1, 1, RANGE_20_48mV, NADC_16, CT
 }
 ```
 
+
+If you want to use UART or virtual USB COM port on youe microcontroller, it is recommended to use this print function:
+```C
+// Print setting -------------------
+#define DEBUG_ENABLE  1
+#define USB_DEBUG     0
+#define DEBUG_UART    (&huart1)
+// ---------------------------------
+
+#if DEBUG_ENABLE
+  #include "stdarg.h"
+  #include "string.h"
+  #include "stdlib.h"
+
+  #if USB_DEBUG
+    #include "usbd_cdc_if.h"
+  #endif
+#endif
+
+void DEBUG(const char* _str, ...){
+  #if DEBUG_ENABLE
+    va_list args;
+    va_start(args, _str);
+    char buffer[150];
+    memset(buffer, 0, 150);
+    int buffer_size = vsprintf(buffer, _str, args);
+    #if USB_DEBUG
+      CDC_Transmit_FS((uint8_t*) buffer, buffer_size);
+    #else
+      HAL_UART_Transmit(DEBUG_UART, (uint8_t*)buffer, buffer_size, 5000);
+    #ednif
+  #endif
+}
+```
+
+
+By applying the above trick, you can simply use this one to see the variables on the serial terminal:
+```C
+#include "ina234.h"
+
+INA234 ina234;
+
+if(STATUS_OK == INA234_init(&ina234, 0x48, &hi2c1, 1, RANGE_20_48mV, NADC_16, CTIME_1100us, CTIME_140us, MODE_CONTINUOUS_BOTH_SHUNT_BUS)){
+
+  INA234_readAll(&ina234);
+  DEBUG("Shunt Voltage: %.3fmV \t Bus Voltage: %.2fV \t Current: %.2fA \t Power: %.2fW\r\n", ina234.ShuntVoltage, ina234.BusVoltage, ina234.Current, ina234.Power);
+
+}
+else{
+
+  DEBUG("----- INA234 init failed -----\r\n");
+
+}
+```
 ## Advanced Options
 
 ### Using Alert
