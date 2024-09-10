@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hal_20based_20library_0',['INA234 HAL Based Library',['../md_README.html',1,'']]]
+  ['library_0',['INA234 current/voltage/power monitor library',['../index.html',1,'']]]
 ];

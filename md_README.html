@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>INA234 HAL Based Library: INA234 HAL Based Library</title>
+<title>INA234 HAL Based Library: README</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">INA234 HAL Based Library<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">INA234 HAL Based Library<span id="projectnumber">&#160;1.0.1</span>
    </div>
    <div id="projectbrief">This library is a software library that works with the INA234 current, voltage, and power monitor chip. This library provides a convenient and efficient way to access the I2C interfaces of the chip, allowing developers to easily integrate this power meter into their systems.</div>
   </td>
@@ -97,11 +97,188 @@ $(function(){initNavTree('md_README.html',''); initResizable(true); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">INA234 HAL Based Library</div></div>
+  <div class="headertitle"><div class="title">README</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a></p>
-<p>Hi </p>
+<div class="textblock"><p><a href="https://github.com/SMotlaq/ina234/actions/workflows/main2.yml"><img src="https://github.com/SMotlaq/ina234/actions/workflows/main2.yml/badge.svg" alt="Doxygen Action" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/SMotlaq/ina234/actions/workflows/pages/pages-build-deployment"><img src="https://github.com/SMotlaq/ina234/actions/workflows/pages/pages-build-deployment/badge.svg" alt="pages-build-deployment" style="pointer-events: none;" class="inline"/></a></p>
+<h1><a class="anchor" id="autotoc_md0"></a>
+INA234 HAL Based Library</h1>
+<p>The INA234 device is a 12-bit digital current monitor with an I2C/SMBus-compatible interface that is compliant with a wide range of digital bus voltages such as 1.2 V, 1.8 V, 3.3 V, and 5.0 V. The device monitors the voltage across an external sense resistor and reports values for current, bus voltage, and power. (<a href="https://www.ti.com/product/INA234">Click for more info</a>)</p>
+<p>This library is a software library that works with the INA234 current, voltage, and power monitor chip. This library provides a convenient and efficient way to access the I2C interfaces of the chip, allowing developers to easily integrate this power meter into their systems.</p>
+<p>The library is designed to be easy to use and provides a simple, intuitive API for accessing the I2C interfaces of the INA234. It includes a range of functions for performing common I2C operations, such as sending and receiving data, querying the status of the chip, reading the measured parameters, and configuring the INA234 settings.</p>
+<p>With this library, developers can quickly and easily integrate the INA234 into their systems, enabling them to take full advantage of the chip's capabilities.</p>
+<h2><a class="anchor" id="autotoc_md1"></a>
+Key Features</h2>
+<ul>
+<li>Easy-to-use API for accessing the I2C interfaces of the INA234</li>
+<li>Support for common I2C operations, such as sending and receiving data, querying the status of the chip, reading the measured parameters, and configuring the INA234 settings</li>
+<li>Full feature library</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md2"></a>
+Documentations</h2>
+<p>The full documents are available <a href="https://smotlaq.github.io/ina234/">here</a></p>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Donate</h2>
+<p>Is it helpfull?</p>
+<p><a href="http://smotlaq.ir/LQgQF"><img src="https://raw.githubusercontent.com/SMotlaq/LoRa/master/bmc.png" alt="Buy me a Coffee" width="200" class="inline"/> </a> </p>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Getting Started</h1>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Quick Start</h2>
+<ol type="1">
+<li>Downoad the library source from the <a href="http://github.com/smotlaq/ina234/releases/latest">latest release</a></li>
+<li>Copy <code><a class="el" href="ina234_8c.html">ina234.c</a></code> and <code><a class="el" href="ina234_8h.html">ina234.h</a></code> file to your project directory and add them to your IDE if necessary.</li>
+<li>Inclued the library into your project: <div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="ina234_8h.html">ina234.h</a>&quot;</span></div>
+<div class="ttc" id="aina234_8h_html"><div class="ttname"><a href="ina234_8h.html">ina234.h</a></div></div>
+</div><!-- fragment --></li>
+<li>Create an object (instanse) from INA234 struct with desired name: <div class="fragment"><div class="line"><a class="code hl_struct" href="structina234.html">INA234</a> <a class="code hl_variable" href="main_8c.html#a1d952d65a39ff30284cd52862e94b5f2">ina234</a>;</div>
+<div class="ttc" id="amain_8c_html_a1d952d65a39ff30284cd52862e94b5f2"><div class="ttname"><a href="main_8c.html#a1d952d65a39ff30284cd52862e94b5f2">ina234</a></div><div class="ttdeci">INA234 ina234</div><div class="ttdef"><b>Definition</b> main.c:68</div></div>
+<div class="ttc" id="astructina234_html"><div class="ttname"><a href="structina234.html">ina234</a></div><div class="ttdoc">Class (struct) that stores variables for interacting with INA234.</div><div class="ttdef"><b>Definition</b> ina234.h:81</div></div>
+</div><!-- fragment --></li>
+<li>Initialize the chip: <div class="fragment"><div class="line"><a class="code hl_function" href="ina234_8c.html#a21acc30b187445a98f711a54b8678c7c">INA234_init</a>(&amp;<a class="code hl_struct" href="structina234.html">ina234</a>, 0x48, &amp;hi2c1, 1, <a class="code hl_enumvalue" href="ina234_8h.html#ae77acd2b9e0633c6769c2275fc8c71fca39711bc57d71a9e56b586578de4da136">RANGE_20_48mV</a>, <a class="code hl_enumvalue" href="ina234_8h.html#aeec3587067ff840117ceeb10b98eda58a3a1205ed5042c059ebf47784254d1f29">NADC_16</a>, <a class="code hl_enumvalue" href="ina234_8h.html#ac8baaa7d3332fac0cb58606c8abacdb6a65ed0d16270a6141ab8dd8488fe7f41e">CTIME_1100us</a>, <a class="code hl_enumvalue" href="ina234_8h.html#ac8baaa7d3332fac0cb58606c8abacdb6acfaa6a642034e5c48d5f172355a0e22d">CTIME_140us</a>, <a class="code hl_enumvalue" href="ina234_8h.html#a46c8a310cf4c094f8c80e1cb8dc1f911a7bc1351d315d165a969fe64c964da364">MODE_CONTINUOUS_BOTH_SHUNT_BUS</a>);</div>
+<div class="ttc" id="aina234_8c_html_a21acc30b187445a98f711a54b8678c7c"><div class="ttname"><a href="ina234_8c.html#a21acc30b187445a98f711a54b8678c7c">INA234_init</a></div><div class="ttdeci">Status INA234_init(INA234 *self, uint8_t I2C_ADDR, I2C_HandleTypeDef *hi2c, float ShuntResistor, ADCRange adc_range, NumSamples numer_of_adc_samples, ConvTime vbus_conversion_time, ConvTime vshunt_conversion_time, Mode mode)</div><div class="ttdoc">Initialize the INA234 with the given config.</div><div class="ttdef"><b>Definition</b> ina234.c:101</div></div>
+<div class="ttc" id="aina234_8h_html_a46c8a310cf4c094f8c80e1cb8dc1f911a7bc1351d315d165a969fe64c964da364"><div class="ttname"><a href="ina234_8h.html#a46c8a310cf4c094f8c80e1cb8dc1f911a7bc1351d315d165a969fe64c964da364">MODE_CONTINUOUS_BOTH_SHUNT_BUS</a></div><div class="ttdeci">@ MODE_CONTINUOUS_BOTH_SHUNT_BUS</div><div class="ttdef"><b>Definition</b> ina234.h:69</div></div>
+<div class="ttc" id="aina234_8h_html_ac8baaa7d3332fac0cb58606c8abacdb6a65ed0d16270a6141ab8dd8488fe7f41e"><div class="ttname"><a href="ina234_8h.html#ac8baaa7d3332fac0cb58606c8abacdb6a65ed0d16270a6141ab8dd8488fe7f41e">CTIME_1100us</a></div><div class="ttdeci">@ CTIME_1100us</div><div class="ttdef"><b>Definition</b> ina234.h:68</div></div>
+<div class="ttc" id="aina234_8h_html_ac8baaa7d3332fac0cb58606c8abacdb6acfaa6a642034e5c48d5f172355a0e22d"><div class="ttname"><a href="ina234_8h.html#ac8baaa7d3332fac0cb58606c8abacdb6acfaa6a642034e5c48d5f172355a0e22d">CTIME_140us</a></div><div class="ttdeci">@ CTIME_140us</div><div class="ttdef"><b>Definition</b> ina234.h:68</div></div>
+<div class="ttc" id="aina234_8h_html_ae77acd2b9e0633c6769c2275fc8c71fca39711bc57d71a9e56b586578de4da136"><div class="ttname"><a href="ina234_8h.html#ae77acd2b9e0633c6769c2275fc8c71fca39711bc57d71a9e56b586578de4da136">RANGE_20_48mV</a></div><div class="ttdeci">@ RANGE_20_48mV</div><div class="ttdef"><b>Definition</b> ina234.h:66</div></div>
+<div class="ttc" id="aina234_8h_html_aeec3587067ff840117ceeb10b98eda58a3a1205ed5042c059ebf47784254d1f29"><div class="ttname"><a href="ina234_8h.html#aeec3587067ff840117ceeb10b98eda58a3a1205ed5042c059ebf47784254d1f29">NADC_16</a></div><div class="ttdeci">@ NADC_16</div><div class="ttdef"><b>Definition</b> ina234.h:67</div></div>
+</div><!-- fragment --> Each argument is described on the <a href="https://smotlaq.github.io/ina234/ina234_8c.html#a21acc30b187445a98f711a54b8678c7c">doc page</a>.</li>
+<li>Now you can call <code>INA234_readAll</code> function to read the meassured data: <div class="fragment"><div class="line"><a class="code hl_function" href="ina234_8c.html#ac7901cf62e078ff3a235839061a3608b">INA234_readAll</a>(&amp;<a class="code hl_struct" href="structina234.html">ina234</a>);</div>
+<div class="line">shunt_voltage = <a class="code hl_struct" href="structina234.html">ina234</a>.<a class="code hl_variable" href="structina234.html#ac63c1ad335c16bcdb33b5e55cf773ad3">ShuntVoltage</a>;</div>
+<div class="line">bus_voltage = <a class="code hl_struct" href="structina234.html">ina234</a>.<a class="code hl_variable" href="structina234.html#a4cf12f3449e646afc1f8cc93a5264589">BusVoltage</a>;</div>
+<div class="line">current = <a class="code hl_struct" href="structina234.html">ina234</a>.<a class="code hl_variable" href="structina234.html#ae8d3473f04d1b074e042108e0816efe6">Current</a>;</div>
+<div class="line">power = <a class="code hl_struct" href="structina234.html">ina234</a>.<a class="code hl_variable" href="structina234.html#aeca176f09c48cbe15df7fc4fff7c77f7">Power</a>;</div>
+<div class="ttc" id="aina234_8c_html_ac7901cf62e078ff3a235839061a3608b"><div class="ttname"><a href="ina234_8c.html#ac7901cf62e078ff3a235839061a3608b">INA234_readAll</a></div><div class="ttdeci">void INA234_readAll(INA234 *self)</div><div class="ttdoc">Read all of the measured values: Shunt voltage, bus voltage, power, and current. Then store the value...</div><div class="ttdef"><b>Definition</b> ina234.c:538</div></div>
+<div class="ttc" id="astructina234_html_a4cf12f3449e646afc1f8cc93a5264589"><div class="ttname"><a href="structina234.html#a4cf12f3449e646afc1f8cc93a5264589">ina234::BusVoltage</a></div><div class="ttdeci">float BusVoltage</div><div class="ttdef"><b>Definition</b> ina234.h:103</div></div>
+<div class="ttc" id="astructina234_html_ac63c1ad335c16bcdb33b5e55cf773ad3"><div class="ttname"><a href="structina234.html#ac63c1ad335c16bcdb33b5e55cf773ad3">ina234::ShuntVoltage</a></div><div class="ttdeci">float ShuntVoltage</div><div class="ttdef"><b>Definition</b> ina234.h:102</div></div>
+<div class="ttc" id="astructina234_html_ae8d3473f04d1b074e042108e0816efe6"><div class="ttname"><a href="structina234.html#ae8d3473f04d1b074e042108e0816efe6">ina234::Current</a></div><div class="ttdeci">float Current</div><div class="ttdef"><b>Definition</b> ina234.h:105</div></div>
+<div class="ttc" id="astructina234_html_aeca176f09c48cbe15df7fc4fff7c77f7"><div class="ttname"><a href="structina234.html#aeca176f09c48cbe15df7fc4fff7c77f7">ina234::Power</a></div><div class="ttdeci">float Power</div><div class="ttdef"><b>Definition</b> ina234.h:104</div></div>
+</div><!-- fragment --></li>
+</ol>
+<p>Here is the whole code: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="ina234_8h.html">ina234.h</a>&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><a class="code hl_struct" href="structina234.html">INA234</a> <a class="code hl_variable" href="main_8c.html#a1d952d65a39ff30284cd52862e94b5f2">ina234</a>;</div>
+<div class="line"><span class="keywordtype">float</span> shunt_voltage, bus_voltage, current, power;</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">if</span>(<a class="code hl_enumvalue" href="ina234_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba7e4a42e3b6dd63708c64cf3db6f69566">STATUS_OK</a> == <a class="code hl_function" href="ina234_8c.html#a21acc30b187445a98f711a54b8678c7c">INA234_init</a>(&amp;<a class="code hl_struct" href="structina234.html">ina234</a>, 0x48, &amp;hi2c1, 1, <a class="code hl_enumvalue" href="ina234_8h.html#ae77acd2b9e0633c6769c2275fc8c71fca39711bc57d71a9e56b586578de4da136">RANGE_20_48mV</a>, <a class="code hl_enumvalue" href="ina234_8h.html#aeec3587067ff840117ceeb10b98eda58a3a1205ed5042c059ebf47784254d1f29">NADC_16</a>, <a class="code hl_enumvalue" href="ina234_8h.html#ac8baaa7d3332fac0cb58606c8abacdb6a65ed0d16270a6141ab8dd8488fe7f41e">CTIME_1100us</a>, <a class="code hl_enumvalue" href="ina234_8h.html#ac8baaa7d3332fac0cb58606c8abacdb6acfaa6a642034e5c48d5f172355a0e22d">CTIME_140us</a>, <a class="code hl_enumvalue" href="ina234_8h.html#a46c8a310cf4c094f8c80e1cb8dc1f911a7bc1351d315d165a969fe64c964da364">MODE_CONTINUOUS_BOTH_SHUNT_BUS</a>)){</div>
+<div class="line"> </div>
+<div class="line">  <a class="code hl_function" href="ina234_8c.html#ac7901cf62e078ff3a235839061a3608b">INA234_readAll</a>(&amp;<a class="code hl_struct" href="structina234.html">ina234</a>);</div>
+<div class="line">  shunt_voltage = <a class="code hl_struct" href="structina234.html">ina234</a>.<a class="code hl_variable" href="structina234.html#ac63c1ad335c16bcdb33b5e55cf773ad3">ShuntVoltage</a>;</div>
+<div class="line">  bus_voltage = <a class="code hl_struct" href="structina234.html">ina234</a>.<a class="code hl_variable" href="structina234.html#a4cf12f3449e646afc1f8cc93a5264589">BusVoltage</a>;</div>
+<div class="line">  current = <a class="code hl_struct" href="structina234.html">ina234</a>.<a class="code hl_variable" href="structina234.html#ae8d3473f04d1b074e042108e0816efe6">Current</a>;</div>
+<div class="line">  power = <a class="code hl_struct" href="structina234.html">ina234</a>.<a class="code hl_variable" href="structina234.html#aeca176f09c48cbe15df7fc4fff7c77f7">Power</a>;</div>
+<div class="line">}</div>
+<div class="ttc" id="aina234_8h_html_a67a0db04d321a74b7e7fcfd3f1a3f70ba7e4a42e3b6dd63708c64cf3db6f69566"><div class="ttname"><a href="ina234_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba7e4a42e3b6dd63708c64cf3db6f69566">STATUS_OK</a></div><div class="ttdeci">@ STATUS_OK</div><div class="ttdef"><b>Definition</b> ina234.h:70</div></div>
+</div><!-- fragment --><p>If you want to use UART or virtual USB COM port on youe microcontroller, it is recommended to use this print function: </p><div class="fragment"><div class="line"><span class="comment">// Print setting -------------------</span></div>
+<div class="line"><span class="preprocessor">#define DEBUG_ENABLE  1</span></div>
+<div class="line"><span class="preprocessor">#define USB_DEBUG     0</span></div>
+<div class="line"><span class="preprocessor">#define DEBUG_UART    (&amp;huart1)</span></div>
+<div class="line"><span class="comment">// ---------------------------------</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#if DEBUG_ENABLE</span></div>
+<div class="line"><span class="preprocessor">  #include &quot;stdarg.h&quot;</span></div>
+<div class="line"><span class="preprocessor">  #include &quot;string.h&quot;</span></div>
+<div class="line"><span class="preprocessor">  #include &quot;stdlib.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">  #if USB_DEBUG</span></div>
+<div class="line"><span class="preprocessor">    #include &quot;usbd_cdc_if.h&quot;</span></div>
+<div class="line"><span class="preprocessor">  #endif</span></div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> <a class="code hl_function" href="main_8c.html#a04f912a473b864fea78333904e0b9798">DEBUG</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* _str, ...){</div>
+<div class="line"><span class="preprocessor">  #if DEBUG_ENABLE</span></div>
+<div class="line">    va_list args;</div>
+<div class="line">    va_start(args, _str);</div>
+<div class="line">    <span class="keywordtype">char</span> buffer[150];</div>
+<div class="line">    memset(buffer, 0, 150);</div>
+<div class="line">    <span class="keywordtype">int</span> buffer_size = vsprintf(buffer, _str, args);</div>
+<div class="line"><span class="preprocessor">    #if USB_DEBUG</span></div>
+<div class="line">      CDC_Transmit_FS((uint8_t*) buffer, buffer_size);</div>
+<div class="line"><span class="preprocessor">    #else</span></div>
+<div class="line">      HAL_UART_Transmit(<a class="code hl_define" href="main_8c.html#ace21428290f0e412332701391f825a10">DEBUG_UART</a>, (uint8_t*)buffer, buffer_size, 5000);</div>
+<div class="line"><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="preprocessor">  #endif</span></div>
+<div class="line">}</div>
+<div class="ttc" id="amain_8c_html_a04f912a473b864fea78333904e0b9798"><div class="ttname"><a href="main_8c.html#a04f912a473b864fea78333904e0b9798">DEBUG</a></div><div class="ttdeci">void DEBUG(const char *_str,...)</div><div class="ttdef"><b>Definition</b> main.c:237</div></div>
+<div class="ttc" id="amain_8c_html_ace21428290f0e412332701391f825a10"><div class="ttname"><a href="main_8c.html#ace21428290f0e412332701391f825a10">DEBUG_UART</a></div><div class="ttdeci">#define DEBUG_UART</div><div class="ttdef"><b>Definition</b> main.c:35</div></div>
+</div><!-- fragment --><p>By applying the above trick, you can simply use this one to see the variables on the serial terminal: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="ina234_8h.html">ina234.h</a>&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><a class="code hl_struct" href="structina234.html">INA234</a> <a class="code hl_variable" href="main_8c.html#a1d952d65a39ff30284cd52862e94b5f2">ina234</a>;</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">if</span>(<a class="code hl_enumvalue" href="ina234_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba7e4a42e3b6dd63708c64cf3db6f69566">STATUS_OK</a> == <a class="code hl_function" href="ina234_8c.html#a21acc30b187445a98f711a54b8678c7c">INA234_init</a>(&amp;<a class="code hl_struct" href="structina234.html">ina234</a>, 0x48, &amp;hi2c1, 1, <a class="code hl_enumvalue" href="ina234_8h.html#ae77acd2b9e0633c6769c2275fc8c71fca39711bc57d71a9e56b586578de4da136">RANGE_20_48mV</a>, <a class="code hl_enumvalue" href="ina234_8h.html#aeec3587067ff840117ceeb10b98eda58a3a1205ed5042c059ebf47784254d1f29">NADC_16</a>, <a class="code hl_enumvalue" href="ina234_8h.html#ac8baaa7d3332fac0cb58606c8abacdb6a65ed0d16270a6141ab8dd8488fe7f41e">CTIME_1100us</a>, <a class="code hl_enumvalue" href="ina234_8h.html#ac8baaa7d3332fac0cb58606c8abacdb6acfaa6a642034e5c48d5f172355a0e22d">CTIME_140us</a>, <a class="code hl_enumvalue" href="ina234_8h.html#a46c8a310cf4c094f8c80e1cb8dc1f911a7bc1351d315d165a969fe64c964da364">MODE_CONTINUOUS_BOTH_SHUNT_BUS</a>)){</div>
+<div class="line"> </div>
+<div class="line">  <a class="code hl_function" href="ina234_8c.html#ac7901cf62e078ff3a235839061a3608b">INA234_readAll</a>(&amp;<a class="code hl_struct" href="structina234.html">ina234</a>);</div>
+<div class="line">  <a class="code hl_function" href="main_8c.html#a04f912a473b864fea78333904e0b9798">DEBUG</a>(<span class="stringliteral">&quot;Shunt Voltage: %.3fmV \t Bus Voltage: %.2fV \t Current: %.2fA \t Power: %.2fW\r\n&quot;</span>, <a class="code hl_struct" href="structina234.html">ina234</a>.<a class="code hl_variable" href="structina234.html#ac63c1ad335c16bcdb33b5e55cf773ad3">ShuntVoltage</a>, <a class="code hl_struct" href="structina234.html">ina234</a>.<a class="code hl_variable" href="structina234.html#a4cf12f3449e646afc1f8cc93a5264589">BusVoltage</a>, <a class="code hl_struct" href="structina234.html">ina234</a>.<a class="code hl_variable" href="structina234.html#ae8d3473f04d1b074e042108e0816efe6">Current</a>, <a class="code hl_struct" href="structina234.html">ina234</a>.<a class="code hl_variable" href="structina234.html#aeca176f09c48cbe15df7fc4fff7c77f7">Power</a>);</div>
+<div class="line"> </div>
+<div class="line">}</div>
+<div class="line"><span class="keywordflow">else</span>{</div>
+<div class="line"> </div>
+<div class="line">  <a class="code hl_function" href="main_8c.html#a04f912a473b864fea78333904e0b9798">DEBUG</a>(<span class="stringliteral">&quot;----- INA234 init failed -----\r\n&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">}</div>
+</div><!-- fragment --> <h2><a class="anchor" id="autotoc_md6"></a>
+Advanced Options</h2>
+<h3><a class="anchor" id="autotoc_md7"></a>
+Using Alert</h3>
+<p>INA234 can assert an alert on several situations like convertion ready, over power, over current, bus over voltage, bus under voltage, etc. To initialize alert functionality, use <code>INA234_alert_init</code> function: </p><div class="fragment"><div class="line"><a class="code hl_function" href="ina234_8c.html#afb44437883ad8f8d08aaf695815da7ed">INA234_alert_init</a>(&amp;<a class="code hl_struct" href="structina234.html">ina234</a>, <a class="code hl_enumvalue" href="ina234_8h.html#a81e9cf0869f985ab1a984626e9464ed4adf6cdb85c8967fba23a0f0244b49057c">ALERT_SHUNT_OVER_LIMIT</a>, <a class="code hl_enumvalue" href="ina234_8h.html#ada37218468b40fbf8e3f7951165cf634ac517f2dbfd71d39c6277a02c6a8e98b5">ALERT_ACTIVE_LOW</a>, <a class="code hl_enumvalue" href="ina234_8h.html#a9524876614527f1c1cad905b5586a61ca8e18da66cd5b403de50cd5cea2867a01">ALERT_TRANSPARENT</a>, <a class="code hl_enumvalue" href="ina234_8h.html#af9b60a033119bbb624f6578c3dc1b6e4a083db3ebfb856b3fb387dd31d856c0c8">ALERT_CONV_DISABLE</a>, 2.5)</div>
+<div class="ttc" id="aina234_8c_html_afb44437883ad8f8d08aaf695815da7ed"><div class="ttname"><a href="ina234_8c.html#afb44437883ad8f8d08aaf695815da7ed">INA234_alert_init</a></div><div class="ttdeci">Status INA234_alert_init(INA234 *self, AlertOn alert_on, AlertPolarity alert_polarity, AlertLatch alert_latch, AlertConvReady alert_conv_ready, float alert_limit)</div><div class="ttdoc">Initialize the alert functionality of INA234 with the given configurations.</div><div class="ttdef"><b>Definition</b> ina234.c:176</div></div>
+<div class="ttc" id="aina234_8h_html_a81e9cf0869f985ab1a984626e9464ed4adf6cdb85c8967fba23a0f0244b49057c"><div class="ttname"><a href="ina234_8h.html#a81e9cf0869f985ab1a984626e9464ed4adf6cdb85c8967fba23a0f0244b49057c">ALERT_SHUNT_OVER_LIMIT</a></div><div class="ttdeci">@ ALERT_SHUNT_OVER_LIMIT</div><div class="ttdef"><b>Definition</b> ina234.h:71</div></div>
+<div class="ttc" id="aina234_8h_html_a9524876614527f1c1cad905b5586a61ca8e18da66cd5b403de50cd5cea2867a01"><div class="ttname"><a href="ina234_8h.html#a9524876614527f1c1cad905b5586a61ca8e18da66cd5b403de50cd5cea2867a01">ALERT_TRANSPARENT</a></div><div class="ttdeci">@ ALERT_TRANSPARENT</div><div class="ttdef"><b>Definition</b> ina234.h:73</div></div>
+<div class="ttc" id="aina234_8h_html_ada37218468b40fbf8e3f7951165cf634ac517f2dbfd71d39c6277a02c6a8e98b5"><div class="ttname"><a href="ina234_8h.html#ada37218468b40fbf8e3f7951165cf634ac517f2dbfd71d39c6277a02c6a8e98b5">ALERT_ACTIVE_LOW</a></div><div class="ttdeci">@ ALERT_ACTIVE_LOW</div><div class="ttdef"><b>Definition</b> ina234.h:72</div></div>
+<div class="ttc" id="aina234_8h_html_af9b60a033119bbb624f6578c3dc1b6e4a083db3ebfb856b3fb387dd31d856c0c8"><div class="ttname"><a href="ina234_8h.html#af9b60a033119bbb624f6578c3dc1b6e4a083db3ebfb856b3fb387dd31d856c0c8">ALERT_CONV_DISABLE</a></div><div class="ttdeci">@ ALERT_CONV_DISABLE</div><div class="ttdef"><b>Definition</b> ina234.h:74</div></div>
+</div><!-- fragment --><p> Each argument is described on the <a href="https://smotlaq.github.io/ina234/ina234_8c.html#afb44437883ad8f8d08aaf695815da7ed">doc page</a>.</p>
+<p>** <em>NOTE1</em> ** If you choose <code>ALERT_LATCHED</code> for alert latch mode, you have to reset the alert pin by calling <code>INA234_resetAlert</code> function after each alert assertion. (<a href="https://smotlaq.github.io/ina234/ina234_8c.html#a5810f9a740226a39ba5cc2afa6b64f77">see more</a>)</p>
+<p>** <em>NOTE2</em> ** If you enabled convertion ready alert as well as limit reach functions (like shunt over voltage etc), you have to distinguish the alert source bt calling <code>INA234_getAlertSource</code> function. (<a href="https://smotlaq.github.io/ina234/ina234_8c.html#a52cc3b785dea1f5af6f0803f02fcefdb">see more</a>)</p>
+<p>** <em>NOTE3</em> ** The alert pin is open-drain. So don not forget to add a pull-up resistor on this pin.</p>
+<h3><a class="anchor" id="autotoc_md8"></a>
+Read Parameters Individually</h3>
+<p>You can read each parameter individually instead of <code>INA234_readAll</code> by calling each of these functions:</p><ul>
+<li><code>INA234_getShuntVoltage(&amp;<a class="el" href="structina234.html" title="Class (struct) that stores variables for interacting with INA234.">ina234</a>);</code> to read shunt voltage (in mV)</li>
+<li><code>INA234_getBusVoltage(&amp;<a class="el" href="structina234.html" title="Class (struct) that stores variables for interacting with INA234.">ina234</a>);</code> to read bus voltage (in V)</li>
+<li><code>INA234_getPower(&amp;<a class="el" href="structina234.html" title="Class (struct) that stores variables for interacting with INA234.">ina234</a>);</code> to read power (in W)</li>
+<li><code>INA234_getCurrent(&amp;<a class="el" href="structina234.html" title="Class (struct) that stores variables for interacting with INA234.">ina234</a>);</code> to read current (in A)</li>
+</ul>
+<p>Example: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="ina234_8h.html">ina234.h</a>&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><a class="code hl_struct" href="structina234.html">INA234</a> <a class="code hl_variable" href="main_8c.html#a1d952d65a39ff30284cd52862e94b5f2">ina234</a>;</div>
+<div class="line"><span class="keywordtype">float</span> shunt_voltage, bus_voltage, current, power;</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">if</span>(<a class="code hl_enumvalue" href="ina234_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba7e4a42e3b6dd63708c64cf3db6f69566">STATUS_OK</a> == <a class="code hl_function" href="ina234_8c.html#a21acc30b187445a98f711a54b8678c7c">INA234_init</a>(&amp;<a class="code hl_struct" href="structina234.html">ina234</a>, 0x48, &amp;hi2c1, 1, <a class="code hl_enumvalue" href="ina234_8h.html#ae77acd2b9e0633c6769c2275fc8c71fca39711bc57d71a9e56b586578de4da136">RANGE_20_48mV</a>, <a class="code hl_enumvalue" href="ina234_8h.html#aeec3587067ff840117ceeb10b98eda58a3a1205ed5042c059ebf47784254d1f29">NADC_16</a>, <a class="code hl_enumvalue" href="ina234_8h.html#ac8baaa7d3332fac0cb58606c8abacdb6a65ed0d16270a6141ab8dd8488fe7f41e">CTIME_1100us</a>, <a class="code hl_enumvalue" href="ina234_8h.html#ac8baaa7d3332fac0cb58606c8abacdb6acfaa6a642034e5c48d5f172355a0e22d">CTIME_140us</a>, <a class="code hl_enumvalue" href="ina234_8h.html#a46c8a310cf4c094f8c80e1cb8dc1f911a7bc1351d315d165a969fe64c964da364">MODE_CONTINUOUS_BOTH_SHUNT_BUS</a>)){</div>
+<div class="line"> </div>
+<div class="line">  shunt_voltage = <a class="code hl_function" href="ina234_8c.html#a256f66571357742aec8b4f0104c54b6b">INA234_getShuntVoltage</a>(&amp;<a class="code hl_struct" href="structina234.html">ina234</a>);</div>
+<div class="line">  bus_voltage = <a class="code hl_function" href="ina234_8c.html#a97ec39b6399d3ab449e499a57668748d">INA234_getBusVoltage</a>(&amp;<a class="code hl_struct" href="structina234.html">ina234</a>);</div>
+<div class="line">  current = <a class="code hl_function" href="ina234_8c.html#a825a355395fef312e3642f9f8ca6463c">INA234_getCurrent</a>(&amp;<a class="code hl_struct" href="structina234.html">ina234</a>);;</div>
+<div class="line">  power = <a class="code hl_function" href="ina234_8c.html#a163121f0afcab9a5e49f419b94290f20">INA234_getPower</a>(&amp;<a class="code hl_struct" href="structina234.html">ina234</a>);;</div>
+<div class="line">}</div>
+<div class="ttc" id="aina234_8c_html_a163121f0afcab9a5e49f419b94290f20"><div class="ttname"><a href="ina234_8c.html#a163121f0afcab9a5e49f419b94290f20">INA234_getPower</a></div><div class="ttdeci">float INA234_getPower(INA234 *self)</div><div class="ttdoc">Read the power from INA234.</div><div class="ttdef"><b>Definition</b> ina234.c:587</div></div>
+<div class="ttc" id="aina234_8c_html_a256f66571357742aec8b4f0104c54b6b"><div class="ttname"><a href="ina234_8c.html#a256f66571357742aec8b4f0104c54b6b">INA234_getShuntVoltage</a></div><div class="ttdeci">float INA234_getShuntVoltage(INA234 *self)</div><div class="ttdoc">Read the shunt voltage from INA234.</div><div class="ttdef"><b>Definition</b> ina234.c:575</div></div>
+<div class="ttc" id="aina234_8c_html_a825a355395fef312e3642f9f8ca6463c"><div class="ttname"><a href="ina234_8c.html#a825a355395fef312e3642f9f8ca6463c">INA234_getCurrent</a></div><div class="ttdeci">float INA234_getCurrent(INA234 *self)</div><div class="ttdoc">Read the current from INA234.</div><div class="ttdef"><b>Definition</b> ina234.c:551</div></div>
+<div class="ttc" id="aina234_8c_html_a97ec39b6399d3ab449e499a57668748d"><div class="ttname"><a href="ina234_8c.html#a97ec39b6399d3ab449e499a57668748d">INA234_getBusVoltage</a></div><div class="ttdeci">float INA234_getBusVoltage(INA234 *self)</div><div class="ttdoc">Read the bus voltage from INA234.</div><div class="ttdef"><b>Definition</b> ina234.c:563</div></div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md9"></a>
+Soft Reset</h3>
+<p>You can send a reset command to all of the INA234 chips on the same bus by calling <code>INA234_SoftResetAll</code> function. (<a href="https://smotlaq.github.io/ina234/ina234_8c.html#af3d939ea27371b17fd265f19957234b2">see more</a>)</p>
+<h3><a class="anchor" id="autotoc_md10"></a>
+Change Settings On The Fly</h3>
+<p>You can change each of the configurations on the fly using these functions:</p><ul>
+<li><code>INA234_setADCRange</code> to change the ADC full scale range (<a href="https://smotlaq.github.io/ina234/ina234_8c.html#aba71c63deed65a0abdbf7269b5f382d8">see more</a>)</li>
+<li><code>INA234_setNumberOfADCSamples</code> to change the number of averaging ADC samples (<a href="https://smotlaq.github.io/ina234/ina234_8c.html#a84ff6173bf6cfa44348ba259a503c804">see more</a>)</li>
+<li><code>INA234_setVBusConversionTime</code> to change the conversion period of VBus (<a href="https://smotlaq.github.io/ina234/ina234_8c.html#a94ec7dc7cd10748c4ed822266174d0ff">see more</a>)</li>
+<li><code>INA234_setVShuntConversionTime</code> to change the conversion period of VBus (<a href="https://smotlaq.github.io/ina234/ina234_8c.html#ad19627414a2465c9cf1fac54f54eaa39">see more</a>)</li>
+<li><code>INA234_setMode</code> to change the operating mode (<a href="https://smotlaq.github.io/ina234/ina234_8c.html#ac85c8e736ffae6d248971091b374d00f">see more</a>)</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md11"></a>
+Getting Manufacturer and Device ID</h3>
+<p>If you want to get the manufacturer or device ID, you can use these functions:</p><ul>
+<li><code>INA234_getManID</code> (<a href="https://smotlaq.github.io/ina234/ina234_8c.html#ae646f51adec51af1aa6377c3dffeeb6a">see more</a>)</li>
+<li><code>INA234_getDevID</code> (<a href="https://smotlaq.github.io/ina234/ina234_8c.html#a88ff1503798836270a41d3b9f3913ca7">see more</a>)</li>
+</ul>
+<p>For example: </p><div class="fragment"><div class="line">printf(<span class="stringliteral">&quot;Manufacturer ID is 0x%4X \r\n&quot;</span>, <a class="code hl_function" href="ina234_8c.html#ae646f51adec51af1aa6377c3dffeeb6a">INA234_getManID</a>(&amp;<a class="code hl_struct" href="structina234.html">ina234</a>));</div>
+<div class="line">printf(<span class="stringliteral">&quot;      Device ID is 0x%3X \r\n&quot;</span>, <a class="code hl_function" href="ina234_8c.html#a88ff1503798836270a41d3b9f3913ca7">INA234_getDevID</a>(&amp;<a class="code hl_struct" href="structina234.html">ina234</a>));</div>
+<div class="ttc" id="aina234_8c_html_a88ff1503798836270a41d3b9f3913ca7"><div class="ttname"><a href="ina234_8c.html#a88ff1503798836270a41d3b9f3913ca7">INA234_getDevID</a></div><div class="ttdeci">uint16_t INA234_getDevID(INA234 *self)</div><div class="ttdoc">Get the device ID.</div><div class="ttdef"><b>Definition</b> ina234.c:527</div></div>
+<div class="ttc" id="aina234_8c_html_ae646f51adec51af1aa6377c3dffeeb6a"><div class="ttname"><a href="ina234_8c.html#ae646f51adec51af1aa6377c3dffeeb6a">INA234_getManID</a></div><div class="ttdeci">uint16_t INA234_getManID(INA234 *self)</div><div class="ttdoc">Get the manufacturer ID.</div><div class="ttdef"><b>Definition</b> ina234.c:516</div></div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md12"></a>
+Get Internal Errors</h3>
+<p>INA234 can also give the state of internal modules like CPU and memory. By calling <code>INA234_getErrors</code> function you can see if there is any error or not. (<a href="https://smotlaq.github.io/ina234/ina234_8c.html#a14a3383eba06ce784ed526585a0cef9a">see more</a>) </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

@@ -26,7 +26,24 @@ var NAVTREE =
 [
   [ "INA234 HAL Based Library", "index.html", [
     [ "INA234 current/voltage/power monitor library", "index.html", "index" ],
-    [ "INA234 HAL Based Library", "md_README.html", null ],
+    [ "README", "md_README.html", [
+      [ "INA234 HAL Based Library", "md_README.html#autotoc_md0", [
+        [ "Key Features", "md_README.html#autotoc_md1", null ],
+        [ "Documentations", "md_README.html#autotoc_md2", null ],
+        [ "Donate", "md_README.html#autotoc_md3", null ]
+      ] ],
+      [ "Getting Started", "md_README.html#autotoc_md4", [
+        [ "Quick Start", "md_README.html#autotoc_md5", null ],
+        [ "Advanced Options", "md_README.html#autotoc_md6", [
+          [ "Using Alert", "md_README.html#autotoc_md7", null ],
+          [ "Read Parameters Individually", "md_README.html#autotoc_md8", null ],
+          [ "Soft Reset", "md_README.html#autotoc_md9", null ],
+          [ "Change Settings On The Fly", "md_README.html#autotoc_md10", null ],
+          [ "Getting Manufacturer and Device ID", "md_README.html#autotoc_md11", null ],
+          [ "Get Internal Errors", "md_README.html#autotoc_md12", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -40,6 +57,7 @@ var NAVTREE =
       [ "Globals", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
         [ "Enumerator", "globals_eval.html", null ],
@@ -51,7 +69,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"structina234_1_1__reg_1_1__shunt__voltage__register.html#aa42491e0ff1ccdf2056d947f78957917"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

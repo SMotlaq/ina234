@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">INA234 HAL Based Library<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">INA234 HAL Based Library<span id="projectnumber">&#160;1.0.1</span>
    </div>
    <div id="projectbrief">This library is a software library that works with the INA234 current, voltage, and power monitor chip. This library provides a convenient and efficient way to access the I2C interfaces of the chip, allowing developers to easily integrate this power meter into their systems.</div>
   </td>
@@ -155,12 +155,16 @@ $(function(){initNavTree('globals.html',''); initResizable(true); });
 
 
 <h3><a id="index_d" name="index_d"></a>- d -</h3><ul>
+<li>DEBUG()&#160;:&#160;<a class="el" href="main_8c.html#a04f912a473b864fea78333904e0b9798">main.c</a></li>
+<li>DEBUG_ENABLE&#160;:&#160;<a class="el" href="main_8c.html#a92f1452fef4b184124fa2334beb53a60">main.c</a></li>
+<li>DEBUG_UART&#160;:&#160;<a class="el" href="main_8c.html#ace21428290f0e412332701391f825a10">main.c</a></li>
 <li>DEVICEID_REGISTER&#160;:&#160;<a class="el" href="ina234_8h.html#a238936614e386e75f2487559953cbc68">ina234.h</a></li>
 </ul>
 
 
 <h3><a id="index_e" name="index_e"></a>- e -</h3><ul>
 <li>ERROR_BOTH_MEMORY_OVF&#160;:&#160;<a class="el" href="ina234_8h.html#ab0df38968e4f03a3f1f6d6df0f31f45aa4a2fc9e6bcb0135acd74edfec8554512">ina234.h</a></li>
+<li>Error_Handler()&#160;:&#160;<a class="el" href="main_8c.html#a1730ffe1e560465665eb47d9264826f9">main.c</a></li>
 <li>ERROR_MEMORY&#160;:&#160;<a class="el" href="ina234_8h.html#ab0df38968e4f03a3f1f6d6df0f31f45aa632a15615c9d0f691788ab4f0a66e41d">ina234.h</a></li>
 <li>ERROR_NONE&#160;:&#160;<a class="el" href="ina234_8h.html#ab0df38968e4f03a3f1f6d6df0f31f45aa4edc8aade11e1de7bbbdc04704baae5f">ina234.h</a></li>
 <li>ERROR_OVF&#160;:&#160;<a class="el" href="ina234_8h.html#ab0df38968e4f03a3f1f6d6df0f31f45aa2a372620a5d99a4790787150ebe2a92c">ina234.h</a></li>
@@ -170,6 +174,7 @@ $(function(){initNavTree('globals.html',''); initResizable(true); });
 
 <h3><a id="index_i" name="index_i"></a>- i -</h3><ul>
 <li>INA234&#160;:&#160;<a class="el" href="ina234_8h.html#a0ee8a79a292d53863aff0274ca030f5a">ina234.h</a></li>
+<li>ina234&#160;:&#160;<a class="el" href="main_8c.html#a1d952d65a39ff30284cd52862e94b5f2">main.c</a></li>
 <li>INA234_alert_init()&#160;:&#160;<a class="el" href="ina234_8c.html#afb44437883ad8f8d08aaf695815da7ed">ina234.c</a>, <a class="el" href="ina234_8h.html#afb44437883ad8f8d08aaf695815da7ed">ina234.h</a></li>
 <li>INA234_getADCRange()&#160;:&#160;<a class="el" href="ina234_8c.html#ab9f2d8b23628fb6b060f837b9a4f71a5">ina234.c</a>, <a class="el" href="ina234_8h.html#ab9f2d8b23628fb6b060f837b9a4f71a5">ina234.h</a></li>
 <li>INA234_getAlertSource()&#160;:&#160;<a class="el" href="ina234_8c.html#a52cc3b785dea1f5af6f0803f02fcefdb">ina234.c</a>, <a class="el" href="ina234_8h.html#a52cc3b785dea1f5af6f0803f02fcefdb">ina234.h</a></li>
@@ -198,6 +203,7 @@ $(function(){initNavTree('globals.html',''); initResizable(true); });
 
 
 <h3><a id="index_m" name="index_m"></a>- m -</h3><ul>
+<li>main()&#160;:&#160;<a class="el" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main.c</a></li>
 <li>MANUFACTURERID_REGISTER&#160;:&#160;<a class="el" href="ina234_8h.html#a8243b56922df1eafe7faf2f5231642b6">ina234.h</a></li>
 <li>MASK_ENABLE_REGISTER&#160;:&#160;<a class="el" href="ina234_8h.html#ae92b8bbb58abb306563771a0149472d2">ina234.h</a></li>
 <li>MAXIMUM_EXPECTED_CURRENT&#160;:&#160;<a class="el" href="ina234_8h.html#ad157a86c3b3394bca27e86844852ee04">ina234.h</a></li>
@@ -235,16 +241,30 @@ $(function(){initNavTree('globals.html',''); initResizable(true); });
 <h3><a id="index_r" name="index_r"></a>- r -</h3><ul>
 <li>RANGE_20_48mV&#160;:&#160;<a class="el" href="ina234_8h.html#ae77acd2b9e0633c6769c2275fc8c71fca39711bc57d71a9e56b586578de4da136">ina234.h</a></li>
 <li>RANGE_81_92mV&#160;:&#160;<a class="el" href="ina234_8h.html#ae77acd2b9e0633c6769c2275fc8c71fcac35ce98e9a40c62ca3ce4054c4d72bb5">ina234.h</a></li>
+<li>raw&#160;:&#160;<a class="el" href="main_8c.html#a3a53cd9280c89e035190faae961eb51d">main.c</a></li>
 </ul>
 
 
 <h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
+<li>SAMPLES_PER_BATCH&#160;:&#160;<a class="el" href="main_8c.html#a2087464ace8a4660407c990e19435ae1">main.c</a></li>
 <li>SHUNT_VOLTAGE_20_48mv_LSB&#160;:&#160;<a class="el" href="ina234_8h.html#a8c0e636ce427d3785aea74926fabc624">ina234.h</a></li>
 <li>SHUNT_VOLTAGE_81_92mv_LSB&#160;:&#160;<a class="el" href="ina234_8h.html#a93329758cb0f2c6f52cffd48b8f961c8">ina234.h</a></li>
 <li>SHUNT_VOLTAGE_REGISTER&#160;:&#160;<a class="el" href="ina234_8h.html#aa417fcb934d07b4af5c20c44b920e5ae">ina234.h</a></li>
 <li>Status&#160;:&#160;<a class="el" href="ina234_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70b">ina234.h</a></li>
 <li>STATUS_OK&#160;:&#160;<a class="el" href="ina234_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba7e4a42e3b6dd63708c64cf3db6f69566">ina234.h</a></li>
 <li>STATUS_TimeOut&#160;:&#160;<a class="el" href="ina234_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70bafddcb825c6c18107885a7d663dcf38e7">ina234.h</a></li>
+<li>SystemClock_Config()&#160;:&#160;<a class="el" href="main_8c.html#a70af21c671abfcc773614a9a4f63d920">main.c</a></li>
+</ul>
+
+
+<h3><a id="index_t" name="index_t"></a>- t -</h3><ul>
+<li>TIME_CALC&#160;:&#160;<a class="el" href="main_8c.html#a34d960622f2bc2fec9a07d603111ca45">main.c</a></li>
+<li>TxBuffer&#160;:&#160;<a class="el" href="main_8c.html#a1a9e27038d742f4209972276e3fc0cb4">main.c</a></li>
+</ul>
+
+
+<h3><a id="index_u" name="index_u"></a>- u -</h3><ul>
+<li>USB_DEBUG&#160;:&#160;<a class="el" href="main_8c.html#aec6af979eb52278a25a7c779d0135aa4">main.c</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

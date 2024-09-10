@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['hal_20based_20library_0',['INA234 HAL Based Library',['../md_README.html',1,'']]],
-  ['hi2c_1',['hi2c',['../structina234.html#abf45242a4a812df409b53ce5216f8d7e',1,'ina234']]]
+  ['get_20internal_20errors_0',['Get Internal Errors',['../md_README.html#autotoc_md12',1,'']]],
+  ['getting_20manufacturer_20and_20device_20id_1',['Getting Manufacturer and Device ID',['../md_README.html#autotoc_md11',1,'']]],
+  ['getting_20started_2',['Getting Started',['../index.html#start',1,'Getting Started'],['../md_README.html#autotoc_md4',1,'Getting Started']]]
 ];

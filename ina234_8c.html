@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">INA234 HAL Based Library<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">INA234 HAL Based Library<span id="projectnumber">&#160;1.0.1</span>
    </div>
    <div id="projectbrief">This library is a software library that works with the INA234 current, voltage, and power monitor chip. This library provides a convenient and efficient way to access the I2C interfaces of the chip, allowing developers to easily integrate this power meter into their systems.</div>
   </td>
@@ -819,6 +819,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">self</td><td>A pointer to the <a class="el" href="structina234.html" title="Class (struct) that stores variables for interacting with INA234.">ina234</a> object (struct) </td></tr>
+    <tr><td class="paramname">I2C_ADDR</td><td>The I2C address of the INA234. It depends on the state of A0 pin of the chip. </td></tr>
     <tr><td class="paramname">hi2c</td><td>A pointer to the I2C handler that is connected to INA234 </td></tr>
     <tr><td class="paramname">ShuntResistor</td><td>The resistance of your shunt resistor (in mOhm) connected to IN+ and IN- of the INA234 </td></tr>
     <tr><td class="paramname">adc_range</td><td>The full scale range of ADC. It can be one of these values:<ul>

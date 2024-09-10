@@ -1,9 +1,4 @@
 var searchData=
 [
-  ['vbus_0',['VBUS',['../structina234_1_1__reg_1_1__bus__voltage__register.html#adf5c609e86df6632a09ad897c2eb4e94',1,'ina234::_reg::_bus_voltage_register']]],
-  ['vbus_5fconversion_5ftime_1',['vbus_conversion_time',['../structina234.html#ac0ebad16cd5b42cd142546eab3aef22e',1,'ina234']]],
-  ['vbusct_2',['VBUSCT',['../structina234_1_1__reg_1_1__config__register.html#a2854a902bb3af04427b00a8472b0cbb8',1,'ina234::_reg::_config_register']]],
-  ['vshct_3',['VSHCT',['../structina234_1_1__reg_1_1__config__register.html#a9efa998f60c85d1bdd04cc3dd4bdc693',1,'ina234::_reg::_config_register']]],
-  ['vshunt_4',['VSHUNT',['../structina234_1_1__reg_1_1__shunt__voltage__register.html#a66e0475d4572f9d2c526cdc06c229ae6',1,'ina234::_reg::_shunt_voltage_register']]],
-  ['vshunt_5fconversion_5ftime_5',['vshunt_conversion_time',['../structina234.html#a5675cd02ce9e463e2bb990cdd56b7e8a',1,'ina234']]]
+  ['txbuffer_0',['TxBuffer',['../main_8c.html#a1a9e27038d742f4209972276e3fc0cb4',1,'main.c']]]
 ];

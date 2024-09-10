@@ -1,10 +1,13 @@
 var searchData=
 [
-  ['pol_0',['POL',['../structina234_1_1__reg_1_1__mask__enable__register.html#aa0b57507453cd43c4b79df8fcee20978',1,'ina234::_reg::_mask_enable_register']]],
-  ['power_1',['POWER',['../structina234_1_1__reg_1_1__power__register.html#a8ef2a47bcdbc2202d402528a15b9a0a3',1,'ina234::_reg::_power_register']]],
-  ['power_2',['Power',['../structina234.html#aeca176f09c48cbe15df7fc4fff7c77f7',1,'ina234']]],
-  ['power_20monitor_20library_3',['INA234 current/voltage/power monitor library',['../index.html',1,'']]],
-  ['power_5flsb_4',['POWER_LSB',['../ina234_8h.html#ab01b539856e5c5102cd3d97a38435d26',1,'ina234.h']]],
-  ['power_5fregister_5',['POWER_REGISTER',['../ina234_8h.html#a731f54cd49fcbbca608bfbe367c75dfb',1,'ina234.h']]],
-  ['power_5fregister_6',['power_register',['../unionina234_1_1__reg.html#adc2d71b0b9e065cf1fb9086b2834c3f1',1,'ina234::_reg']]]
+  ['nadc_5f1_0',['NADC_1',['../ina234_8h.html#aeec3587067ff840117ceeb10b98eda58a993c043bbf51fcb3e71e24560079b3e0',1,'ina234.h']]],
+  ['nadc_5f1024_1',['NADC_1024',['../ina234_8h.html#aeec3587067ff840117ceeb10b98eda58a02bba2371c7cc4740a4bcccc82da45d7',1,'ina234.h']]],
+  ['nadc_5f128_2',['NADC_128',['../ina234_8h.html#aeec3587067ff840117ceeb10b98eda58aa7cf4006919e212a7d722e96c826fa8d',1,'ina234.h']]],
+  ['nadc_5f16_3',['NADC_16',['../ina234_8h.html#aeec3587067ff840117ceeb10b98eda58a3a1205ed5042c059ebf47784254d1f29',1,'ina234.h']]],
+  ['nadc_5f256_4',['NADC_256',['../ina234_8h.html#aeec3587067ff840117ceeb10b98eda58a91a4d2241e749494be617d895d318589',1,'ina234.h']]],
+  ['nadc_5f4_5',['NADC_4',['../ina234_8h.html#aeec3587067ff840117ceeb10b98eda58ac9dd4285a560c534d22fca6840d0ebf5',1,'ina234.h']]],
+  ['nadc_5f512_6',['NADC_512',['../ina234_8h.html#aeec3587067ff840117ceeb10b98eda58af045584cc242ad52f42910989945250f',1,'ina234.h']]],
+  ['nadc_5f64_7',['NADC_64',['../ina234_8h.html#aeec3587067ff840117ceeb10b98eda58abdcabf69ca2812231b1ee322cda057d1',1,'ina234.h']]],
+  ['number_5fof_5fadc_5fsamples_8',['number_of_adc_samples',['../structina234.html#a2ab8a9d5ad14120cc622664faf5d9fef',1,'ina234']]],
+  ['numsamples_9',['NumSamples',['../ina234_8h.html#aeec3587067ff840117ceeb10b98eda58',1,'NumSamples:&#160;ina234.h'],['../ina234_8h.html#a3bce910f55e3b114067517de3ca4ff28',1,'NumSamples:&#160;ina234.h']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['based_20library_0',['INA234 HAL Based Library',['../md_README.html',1,'']]],
+  ['based_20library_0',['INA234 HAL Based Library',['../md_README.html#autotoc_md0',1,'']]],
   ['bol_1',['BOL',['../structina234_1_1__reg_1_1__mask__enable__register.html#a0523a734c855650be9b9f060fc3cdf75',1,'ina234::_reg::_mask_enable_register']]],
   ['bul_2',['BUL',['../structina234_1_1__reg_1_1__mask__enable__register.html#ad8d9d3c9c1f94b7a3685b53757033c55',1,'ina234::_reg::_mask_enable_register']]],
   ['bus_5fvoltage_5flsb_3',['BUS_VOLTAGE_LSB',['../ina234_8h.html#a775ced70ffbd32f6fb31cbb10a10187f',1,'ina234.h']]],
