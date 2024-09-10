@@ -45,6 +45,8 @@
     @brief  Initialize the INA234 with the given config
     @param  self
             A pointer to the ina234 object (struct)
+		@param  I2C_ADDR
+						The I2C address of the INA234. It depends on the state of A0 pin of the chip.
 		@param  hi2c
 		        A pointer to the I2C handler that is connected to INA234
 		@param  ShuntResistor
