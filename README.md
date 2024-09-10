@@ -111,7 +111,7 @@ void DEBUG(const char* _str, ...){
       CDC_Transmit_FS((uint8_t*) buffer, buffer_size);
     #else
       HAL_UART_Transmit(DEBUG_UART, (uint8_t*)buffer, buffer_size, 5000);
-    #ednif
+    #endif
   #endif
 }
 ```
