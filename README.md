@@ -36,20 +36,25 @@ Is it helpfull?
 ## Quick Start
 
 1. Downoad the library source from the [latest release](http://github.com/smotlaq/ina234/releases/latest)
+
 2. Copy `ina234.c` and `ina234.h` file to your project directory and add them to your IDE if necessary.
+
 3. Inclued the library into your project:
    ```C
    #include "ina234.h"
    ```
+
 4. Create an object (instanse) from INA234 struct with desired name:
    ```C
    INA234 ina234;
    ```
+
 5. Initialize the chip:
    ```C
    INA234_init(&ina234, 0x48, &hi2c1, 1, RANGE_20_48mV, NADC_16, CTIME_1100us, CTIME_140us, MODE_CONTINUOUS_BOTH_SHUNT_BUS);
    ```
    Each argument is described on the [doc page](https://smotlaq.github.io/ina234/ina234_8c.html#a21acc30b187445a98f711a54b8678c7c).
+
 6. Now you can call `INA234_readAll` function to read the meassured data:
    ```C
    INA234_readAll(&ina234);
@@ -75,3 +80,72 @@ if(STATUS_OK == INA234_init(&ina234, 0x48, &hi2c1, 1, RANGE_20_48mV, NADC_16, CT
   power = ina234.Power;
 }
 ```
+
+## Advanced Options
+
+### Using Alert
+
+INA234 can assert an alert on several situations like convertion ready, over power, over current, bus over voltage, bus under voltage, etc. To initialize alert functionality, use `INA234_alert_init` function:
+```C
+INA234_alert_init(&ina234, ALERT_SHUNT_OVER_LIMIT, ALERT_ACTIVE_LOW, ALERT_TRANSPARENT, ALERT_CONV_DISABLE, 2.5)
+```
+Each argument is described on the [doc page](https://smotlaq.github.io/ina234/ina234_8c.html#afb44437883ad8f8d08aaf695815da7ed).
+
+** *NOTE1* **  If you choose `ALERT_LATCHED` for alert latch mode, you have to reset the alert pin by calling `INA234_resetAlert` function after each alert assertion. ([see more](https://smotlaq.github.io/ina234/ina234_8c.html#a5810f9a740226a39ba5cc2afa6b64f77))
+
+** *NOTE2* **  If you enabled convertion ready alert as well as limit reach functions (like shunt over voltage etc), you have to distinguish the alert source bt calling `INA234_getAlertSource` function. ([see more](https://smotlaq.github.io/ina234/ina234_8c.html#a52cc3b785dea1f5af6f0803f02fcefdb))
+
+** *NOTE3* **  The alert pin is open-drain. So don not forget to add a pull-up resistor on this pin.
+
+### Read Parameters Individualy
+
+You can read each parameter individually instead of `INA234_readAll` by calling each of these functions:
+* `INA234_getShuntVoltage(&ina234);` to read shunt voltage (in mV)
+* `INA234_getBusVoltage(&ina234);` to read bus voltage (in V)
+* `INA234_getPower(&ina234);` to read power (in W)
+* `INA234_getCurrent(&ina234);` to read current (in A)
+
+Example:
+```C
+#include "ina234.h"
+
+INA234 ina234;
+float shunt_voltage, bus_voltage, current, power;
+
+if(STATUS_OK == INA234_init(&ina234, 0x48, &hi2c1, 1, RANGE_20_48mV, NADC_16, CTIME_1100us, CTIME_140us, MODE_CONTINUOUS_BOTH_SHUNT_BUS)){
+
+  shunt_voltage = INA234_getShuntVoltage(&ina234);
+  bus_voltage = INA234_getBusVoltage(&ina234);
+  current = INA234_getCurrent(&ina234);;
+  power = INA234_getPower(&ina234);;
+}
+```
+
+### Soft Reset
+
+You can send a reset command to all of the INA234 chips on the same bus by calling `INA234_SoftResetAll` function. ([see more](https://smotlaq.github.io/ina234/ina234_8c.html#af3d939ea27371b17fd265f19957234b2))
+
+### Change Settings On The Fly
+
+You can change each of the configurations on the fly using these functions:
+* `INA234_setADCRange` to change the ADC full scale range ([see more](https://smotlaq.github.io/ina234/ina234_8c.html#aba71c63deed65a0abdbf7269b5f382d8))
+* `INA234_setNumberOfADCSamples` to change the number of averaging ADC samples ([see more](https://smotlaq.github.io/ina234/ina234_8c.html#a84ff6173bf6cfa44348ba259a503c804))
+* `INA234_setVBusConversionTime` to change the conversion period of VBus ([see more](https://smotlaq.github.io/ina234/ina234_8c.html#a94ec7dc7cd10748c4ed822266174d0ff))
+* `INA234_setVShuntConversionTime` to change the conversion period of VBus ([see more](https://smotlaq.github.io/ina234/ina234_8c.html#ad19627414a2465c9cf1fac54f54eaa39))
+* `INA234_setMode` to change the operating mode ([see more](https://smotlaq.github.io/ina234/ina234_8c.html#ac85c8e736ffae6d248971091b374d00f))
+
+### Getting Manufacturer and Device ID
+
+If you want to get the manufacturer or device ID, you can use these functions:
+* `INA234_getManID` ([see more](https://smotlaq.github.io/ina234/ina234_8c.html#ae646f51adec51af1aa6377c3dffeeb6a))
+* `INA234_getDevID` ([see more](https://smotlaq.github.io/ina234/ina234_8c.html#a88ff1503798836270a41d3b9f3913ca7))
+
+For example:
+```C
+printf("Manufacturer ID is 0x%4X \r\n", INA234_getManID(&ina234));
+printf("      Device ID is 0x%3X \r\n", INA234_getDevID(&ina234));
+```
+
+### Get Internal Errors
+
+INA234 can also give the state of internal modules like CPU and memory. By calling `INA234_getErrors` function you can see if there is any error or not. ([see more](https://smotlaq.github.io/ina234/ina234_8c.html#a14a3383eba06ce784ed526585a0cef9a))
