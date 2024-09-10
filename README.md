@@ -97,7 +97,7 @@ Each argument is described on the [doc page](https://smotlaq.github.io/ina234/in
 
 ** *NOTE3* **  The alert pin is open-drain. So don not forget to add a pull-up resistor on this pin.
 
-### Read Parameters Individualy
+### Read Parameters Individually
 
 You can read each parameter individually instead of `INA234_readAll` by calling each of these functions:
 * `INA234_getShuntVoltage(&ina234);` to read shunt voltage (in mV)
