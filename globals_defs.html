@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>INA234 HAL Based Library: INA234 current/voltage/power monitor library</title>
+<title>INA234 HAL Based Library: Globals</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,7 +70,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('index.html',''); initResizable(true); });
+$(function(){initNavTree('globals_defs.html',''); initResizable(true); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -95,26 +95,26 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
 </div>
 </div>
 
-<div><div class="header">
-  <div class="headertitle"><div class="title">INA234 current/voltage/power monitor library </div></div>
-</div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="intro_sec"></a>
-Introduction</h1>
-<p>The INA234 device is a 12-bit digital current monitor with an I2C/SMBus-compatible interface that is compliant with a wide range of digital bus voltages such as 1.2 V, 1.8 V, 3.3 V, and 5.0 V. The device monitors the voltage across an external sense resistor and reports values for current, bus voltage, and power.</p>
-<p>The INA234 features programmable ADC conversion times and averaging. The device also has a programmable calibration value with an internal multiplier that enables direct readouts of current in amperes and power in watts. The device monitors the bus voltage present on the IN- pin and can alert on overcurent and undercurrent conditions as well as overvoltage and undervoltage conditions. High input impedance while in current measurement mode allows use of larger current sense resistors needed to measure small value system currents.</p>
-<p>The INA234 senses current on common-mode bus voltages that can vary from -0.3 V to 28 V, independent of the supply voltage. The device operates from a single 1.7-V to 5.5-V supply, drawing a typical supply current of 300 uA in normal operation. The device can be placed in a low-power standby mode where the typical operating current is 2.2 uA.</p>
-<h1><a class="anchor" id="author"></a>
-Author</h1>
-<p>Written by Salman Motlaq (<a href="https://github.com/SMotlaq">@SMotlaq</a> on Github)</p>
-<h1><a class="anchor" id="license"></a>
-License</h1>
-<p>MIT License</p>
-<h1><a class="anchor" id="start"></a>
-Getting Started</h1>
-<p>Go to <a href="https://github.com/SMotlaq">my Github page</a> to get started. You can also see the <a href="./ina234_8c.html">functions list</a> to learn more. </p>
-</div></div><!-- PageDoc -->
-<a href="doxygen_crawl.html"></a>
+<div class="textblock">Here is a list of all macros with links to the files they belong to:</div><ul>
+<li>ALERT_LIMIT_REGISTER&#160;:&#160;<a class="el" href="ina234_8h.html#ab843670bdea443688a3c0fc1bb59df4c">ina234.h</a></li>
+<li>BUS_VOLTAGE_LSB&#160;:&#160;<a class="el" href="ina234_8h.html#a775ced70ffbd32f6fb31cbb10a10187f">ina234.h</a></li>
+<li>BUS_VOLTAGE_REGISTER&#160;:&#160;<a class="el" href="ina234_8h.html#a646eb67bd8e213ae03c5a03e6a569788">ina234.h</a></li>
+<li>CALIBRATION_REGISTER&#160;:&#160;<a class="el" href="ina234_8h.html#ab59d55e52855c8c0f649304fa92a9a13">ina234.h</a></li>
+<li>CONFIGURATION_REGISTER&#160;:&#160;<a class="el" href="ina234_8h.html#a7ee3d94a0cd2d145d66bae6abe5bb302">ina234.h</a></li>
+<li>CURRENT_LSB&#160;:&#160;<a class="el" href="ina234_8h.html#a81ed9fb0bd16f43a3a5bc335f966a96f">ina234.h</a></li>
+<li>CURRENT_LSB_MINIMUM&#160;:&#160;<a class="el" href="ina234_8h.html#a48ce45ec20267ca3c0159a444dc30c33">ina234.h</a></li>
+<li>CURRENT_REGISTER&#160;:&#160;<a class="el" href="ina234_8h.html#a3640431a41e460b8e7ddf642adefae95">ina234.h</a></li>
+<li>DEVICEID_REGISTER&#160;:&#160;<a class="el" href="ina234_8h.html#a238936614e386e75f2487559953cbc68">ina234.h</a></li>
+<li>MANUFACTURERID_REGISTER&#160;:&#160;<a class="el" href="ina234_8h.html#a8243b56922df1eafe7faf2f5231642b6">ina234.h</a></li>
+<li>MASK_ENABLE_REGISTER&#160;:&#160;<a class="el" href="ina234_8h.html#ae92b8bbb58abb306563771a0149472d2">ina234.h</a></li>
+<li>MAXIMUM_EXPECTED_CURRENT&#160;:&#160;<a class="el" href="ina234_8h.html#ad157a86c3b3394bca27e86844852ee04">ina234.h</a></li>
+<li>POWER_LSB&#160;:&#160;<a class="el" href="ina234_8h.html#ab01b539856e5c5102cd3d97a38435d26">ina234.h</a></li>
+<li>POWER_REGISTER&#160;:&#160;<a class="el" href="ina234_8h.html#a731f54cd49fcbbca608bfbe367c75dfb">ina234.h</a></li>
+<li>SHUNT_VOLTAGE_20_48mv_LSB&#160;:&#160;<a class="el" href="ina234_8h.html#a8c0e636ce427d3785aea74926fabc624">ina234.h</a></li>
+<li>SHUNT_VOLTAGE_81_92mv_LSB&#160;:&#160;<a class="el" href="ina234_8h.html#a93329758cb0f2c6f52cffd48b8f961c8">ina234.h</a></li>
+<li>SHUNT_VOLTAGE_REGISTER&#160;:&#160;<a class="el" href="ina234_8h.html#aa417fcb934d07b4af5c20c44b920e5ae">ina234.h</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

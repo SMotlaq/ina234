@@ -1,0 +1,138 @@
+var ina234_8h =
+[
+    [ "ina234", "structina234.html", "structina234" ],
+    [ "_reg", "unionina234_1_1__reg.html", "unionina234_1_1__reg" ],
+    [ "_config_register", "structina234_1_1__reg_1_1__config__register.html", "structina234_1_1__reg_1_1__config__register" ],
+    [ "_shunt_voltage_register", "structina234_1_1__reg_1_1__shunt__voltage__register.html", "structina234_1_1__reg_1_1__shunt__voltage__register" ],
+    [ "_bus_voltage_register", "structina234_1_1__reg_1_1__bus__voltage__register.html", "structina234_1_1__reg_1_1__bus__voltage__register" ],
+    [ "_power_register", "structina234_1_1__reg_1_1__power__register.html", "structina234_1_1__reg_1_1__power__register" ],
+    [ "_current_register", "structina234_1_1__reg_1_1__current__register.html", "structina234_1_1__reg_1_1__current__register" ],
+    [ "_calibration_register", "structina234_1_1__reg_1_1__calibration__register.html", "structina234_1_1__reg_1_1__calibration__register" ],
+    [ "_mask_enable_register", "structina234_1_1__reg_1_1__mask__enable__register.html", "structina234_1_1__reg_1_1__mask__enable__register" ],
+    [ "_alert_limit_register", "structina234_1_1__reg_1_1__alert__limit__register.html", "structina234_1_1__reg_1_1__alert__limit__register" ],
+    [ "_manufacture_id_register", "structina234_1_1__reg_1_1__manufacture__id__register.html", "structina234_1_1__reg_1_1__manufacture__id__register" ],
+    [ "_devide_id_register", "structina234_1_1__reg_1_1__devide__id__register.html", "structina234_1_1__reg_1_1__devide__id__register" ],
+    [ "ALERT_LIMIT_REGISTER", "ina234_8h.html#ab843670bdea443688a3c0fc1bb59df4c", null ],
+    [ "BUS_VOLTAGE_LSB", "ina234_8h.html#a775ced70ffbd32f6fb31cbb10a10187f", null ],
+    [ "BUS_VOLTAGE_REGISTER", "ina234_8h.html#a646eb67bd8e213ae03c5a03e6a569788", null ],
+    [ "CALIBRATION_REGISTER", "ina234_8h.html#ab59d55e52855c8c0f649304fa92a9a13", null ],
+    [ "CONFIGURATION_REGISTER", "ina234_8h.html#a7ee3d94a0cd2d145d66bae6abe5bb302", null ],
+    [ "CURRENT_LSB", "ina234_8h.html#a81ed9fb0bd16f43a3a5bc335f966a96f", null ],
+    [ "CURRENT_LSB_MINIMUM", "ina234_8h.html#a48ce45ec20267ca3c0159a444dc30c33", null ],
+    [ "CURRENT_REGISTER", "ina234_8h.html#a3640431a41e460b8e7ddf642adefae95", null ],
+    [ "DEVICEID_REGISTER", "ina234_8h.html#a238936614e386e75f2487559953cbc68", null ],
+    [ "MANUFACTURERID_REGISTER", "ina234_8h.html#a8243b56922df1eafe7faf2f5231642b6", null ],
+    [ "MASK_ENABLE_REGISTER", "ina234_8h.html#ae92b8bbb58abb306563771a0149472d2", null ],
+    [ "MAXIMUM_EXPECTED_CURRENT", "ina234_8h.html#ad157a86c3b3394bca27e86844852ee04", null ],
+    [ "POWER_LSB", "ina234_8h.html#ab01b539856e5c5102cd3d97a38435d26", null ],
+    [ "POWER_REGISTER", "ina234_8h.html#a731f54cd49fcbbca608bfbe367c75dfb", null ],
+    [ "SHUNT_VOLTAGE_20_48mv_LSB", "ina234_8h.html#a8c0e636ce427d3785aea74926fabc624", null ],
+    [ "SHUNT_VOLTAGE_81_92mv_LSB", "ina234_8h.html#a93329758cb0f2c6f52cffd48b8f961c8", null ],
+    [ "SHUNT_VOLTAGE_REGISTER", "ina234_8h.html#aa417fcb934d07b4af5c20c44b920e5ae", null ],
+    [ "ADCRange", "ina234_8h.html#a650dc7cee4ad520ed3fa35dbe7142216", null ],
+    [ "AlertConvReady", "ina234_8h.html#a848ebbc680edb7898d7edc1ca52a0d37", null ],
+    [ "AlertLatch", "ina234_8h.html#afc7b0844b88c911005553dd08939b096", null ],
+    [ "AlertOn", "ina234_8h.html#a6be1753fa6a5ab6a2afa25019e635f5f", null ],
+    [ "AlertPolarity", "ina234_8h.html#a74f38e65a7114a53a324d460820a43a4", null ],
+    [ "AlertSource", "ina234_8h.html#a3872be266ee7297b319f93420303a008", null ],
+    [ "ConvTime", "ina234_8h.html#ab303d390218c5cf7c69501e0559213ec", null ],
+    [ "ErrorType", "ina234_8h.html#a1324293b60f4d902ebc99cf0d31bad89", null ],
+    [ "INA234", "ina234_8h.html#a0ee8a79a292d53863aff0274ca030f5a", null ],
+    [ "Mode", "ina234_8h.html#a27e0b80eae69f3ea0f661dea593912c8", null ],
+    [ "NumSamples", "ina234_8h.html#a3bce910f55e3b114067517de3ca4ff28", null ],
+    [ "Status", "ina234_8h.html#a59ac6513a4c0c951eff022338ea6e9f6", null ],
+    [ "ADCRange", "ina234_8h.html#ae77acd2b9e0633c6769c2275fc8c71fc", [
+      [ "RANGE_81_92mV", "ina234_8h.html#ae77acd2b9e0633c6769c2275fc8c71fcac35ce98e9a40c62ca3ce4054c4d72bb5", null ],
+      [ "RANGE_20_48mV", "ina234_8h.html#ae77acd2b9e0633c6769c2275fc8c71fca39711bc57d71a9e56b586578de4da136", null ]
+    ] ],
+    [ "AlertConvReady", "ina234_8h.html#af9b60a033119bbb624f6578c3dc1b6e4", [
+      [ "ALERT_CONV_DISABLE", "ina234_8h.html#af9b60a033119bbb624f6578c3dc1b6e4a083db3ebfb856b3fb387dd31d856c0c8", null ],
+      [ "ALERT_CONV_ENABLE", "ina234_8h.html#af9b60a033119bbb624f6578c3dc1b6e4a5e0027e4e01b269be48d60a41243d854", null ]
+    ] ],
+    [ "AlertLatch", "ina234_8h.html#a9524876614527f1c1cad905b5586a61c", [
+      [ "ALERT_TRANSPARENT", "ina234_8h.html#a9524876614527f1c1cad905b5586a61ca8e18da66cd5b403de50cd5cea2867a01", null ],
+      [ "ALERT_LATCHED", "ina234_8h.html#a9524876614527f1c1cad905b5586a61cae66cf6808527fe59bda82112ea1f0626", null ]
+    ] ],
+    [ "AlertOn", "ina234_8h.html#a81e9cf0869f985ab1a984626e9464ed4", [
+      [ "ALERT_NONE", "ina234_8h.html#a81e9cf0869f985ab1a984626e9464ed4ab84e7751ae498fa5f6354fec90392f84", null ],
+      [ "ALERT_SHUNT_OVER_LIMIT", "ina234_8h.html#a81e9cf0869f985ab1a984626e9464ed4adf6cdb85c8967fba23a0f0244b49057c", null ],
+      [ "ALERT_SHUNT_UNDER_LIMIT", "ina234_8h.html#a81e9cf0869f985ab1a984626e9464ed4a948a648cb59cafcc5382b1b5e599d28b", null ],
+      [ "ALERT_BUS_OVER_LIMIT", "ina234_8h.html#a81e9cf0869f985ab1a984626e9464ed4a1ca5e700ee55d0dc367e350b23f11ec9", null ],
+      [ "ALERT_BUS_UNDER_LIMIT", "ina234_8h.html#a81e9cf0869f985ab1a984626e9464ed4a94ace1d59fb93b2a18d3f81347d85baf", null ],
+      [ "ALERT_POWER_OVER_LIMIT", "ina234_8h.html#a81e9cf0869f985ab1a984626e9464ed4a34e2f0c08f8c607c6bef4c42a1650fb3", null ]
+    ] ],
+    [ "AlertPolarity", "ina234_8h.html#ada37218468b40fbf8e3f7951165cf634", [
+      [ "ALERT_ACTIVE_LOW", "ina234_8h.html#ada37218468b40fbf8e3f7951165cf634ac517f2dbfd71d39c6277a02c6a8e98b5", null ],
+      [ "ALERT_ACTIVE_HIGH", "ina234_8h.html#ada37218468b40fbf8e3f7951165cf634acc90eec8b0cea31c65d2125e1dec4b3d", null ]
+    ] ],
+    [ "AlertSource", "ina234_8h.html#abfca48b6c5f91f6e8598c3366ec3f9a8", [
+      [ "ALERT_DATA_READY", "ina234_8h.html#abfca48b6c5f91f6e8598c3366ec3f9a8a83f1800832e2ed9bc6691a53c9a1359d", null ],
+      [ "ALERT_LIMIT_REACHED", "ina234_8h.html#abfca48b6c5f91f6e8598c3366ec3f9a8aea5a0da07bc6063e3ad1f5bc0332dc65", null ]
+    ] ],
+    [ "ConvTime", "ina234_8h.html#ac8baaa7d3332fac0cb58606c8abacdb6", [
+      [ "CTIME_140us", "ina234_8h.html#ac8baaa7d3332fac0cb58606c8abacdb6acfaa6a642034e5c48d5f172355a0e22d", null ],
+      [ "CTIME_204us", "ina234_8h.html#ac8baaa7d3332fac0cb58606c8abacdb6ac369ab9b892e484bf6f6e1c62cdf89a8", null ],
+      [ "CTIME_332us", "ina234_8h.html#ac8baaa7d3332fac0cb58606c8abacdb6abfd7d84dee689ba2bb2f17da3d09ac9a", null ],
+      [ "CTIME_588us", "ina234_8h.html#ac8baaa7d3332fac0cb58606c8abacdb6a2fe24ae5755ffeb5b8082cd037b9dc7f", null ],
+      [ "CTIME_1100us", "ina234_8h.html#ac8baaa7d3332fac0cb58606c8abacdb6a65ed0d16270a6141ab8dd8488fe7f41e", null ],
+      [ "CTIME_2116us", "ina234_8h.html#ac8baaa7d3332fac0cb58606c8abacdb6a47c6de263bc91c68cc7aa33fa4ff0755", null ],
+      [ "CTIME_4156us", "ina234_8h.html#ac8baaa7d3332fac0cb58606c8abacdb6a657a9b9f4cabd5ca90fee02c26638a04", null ],
+      [ "CTIME_8244us", "ina234_8h.html#ac8baaa7d3332fac0cb58606c8abacdb6a08b6eaecf78753c12f67dddf9949be84", null ]
+    ] ],
+    [ "ErrorType", "ina234_8h.html#ab0df38968e4f03a3f1f6d6df0f31f45a", [
+      [ "ERROR_NONE", "ina234_8h.html#ab0df38968e4f03a3f1f6d6df0f31f45aa4edc8aade11e1de7bbbdc04704baae5f", null ],
+      [ "ERROR_MEMORY", "ina234_8h.html#ab0df38968e4f03a3f1f6d6df0f31f45aa632a15615c9d0f691788ab4f0a66e41d", null ],
+      [ "ERROR_OVF", "ina234_8h.html#ab0df38968e4f03a3f1f6d6df0f31f45aa2a372620a5d99a4790787150ebe2a92c", null ],
+      [ "ERROR_BOTH_MEMORY_OVF", "ina234_8h.html#ab0df38968e4f03a3f1f6d6df0f31f45aa4a2fc9e6bcb0135acd74edfec8554512", null ]
+    ] ],
+    [ "Mode", "ina234_8h.html#a46c8a310cf4c094f8c80e1cb8dc1f911", [
+      [ "MODE_SHUTDOWN", "ina234_8h.html#a46c8a310cf4c094f8c80e1cb8dc1f911a0680164b529f8d29d670308298ec2a2b", null ],
+      [ "MODE_SINGLESHOT_SUNT", "ina234_8h.html#a46c8a310cf4c094f8c80e1cb8dc1f911aa90b94d7cd6425245221d504534f0f2f", null ],
+      [ "MODE_SINGLESHOT_BUS", "ina234_8h.html#a46c8a310cf4c094f8c80e1cb8dc1f911a9f304d5978fa9370e3cd0da297f85470", null ],
+      [ "MODE_SINGLESHOT_BOTH_SHUNT_BUS", "ina234_8h.html#a46c8a310cf4c094f8c80e1cb8dc1f911ab729c3948326475cd19e84a433ae96bd", null ],
+      [ "MODE_SHUTDOWN2", "ina234_8h.html#a46c8a310cf4c094f8c80e1cb8dc1f911a28192c7eb7daf555e5eb9def6b82c2db", null ],
+      [ "MODE_CONTINUOUS_SHUNT", "ina234_8h.html#a46c8a310cf4c094f8c80e1cb8dc1f911ac089fb7ab69f944b618f18abe16b3600", null ],
+      [ "MODE_CONTINUOUS_BUS", "ina234_8h.html#a46c8a310cf4c094f8c80e1cb8dc1f911a6cba4ffadd57ed1e5f5a176ab21f4e85", null ],
+      [ "MODE_CONTINUOUS_BOTH_SHUNT_BUS", "ina234_8h.html#a46c8a310cf4c094f8c80e1cb8dc1f911a7bc1351d315d165a969fe64c964da364", null ]
+    ] ],
+    [ "NumSamples", "ina234_8h.html#aeec3587067ff840117ceeb10b98eda58", [
+      [ "NADC_1", "ina234_8h.html#aeec3587067ff840117ceeb10b98eda58a993c043bbf51fcb3e71e24560079b3e0", null ],
+      [ "NADC_4", "ina234_8h.html#aeec3587067ff840117ceeb10b98eda58ac9dd4285a560c534d22fca6840d0ebf5", null ],
+      [ "NADC_16", "ina234_8h.html#aeec3587067ff840117ceeb10b98eda58a3a1205ed5042c059ebf47784254d1f29", null ],
+      [ "NADC_64", "ina234_8h.html#aeec3587067ff840117ceeb10b98eda58abdcabf69ca2812231b1ee322cda057d1", null ],
+      [ "NADC_128", "ina234_8h.html#aeec3587067ff840117ceeb10b98eda58aa7cf4006919e212a7d722e96c826fa8d", null ],
+      [ "NADC_256", "ina234_8h.html#aeec3587067ff840117ceeb10b98eda58a91a4d2241e749494be617d895d318589", null ],
+      [ "NADC_512", "ina234_8h.html#aeec3587067ff840117ceeb10b98eda58af045584cc242ad52f42910989945250f", null ],
+      [ "NADC_1024", "ina234_8h.html#aeec3587067ff840117ceeb10b98eda58a02bba2371c7cc4740a4bcccc82da45d7", null ]
+    ] ],
+    [ "Status", "ina234_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70b", [
+      [ "STATUS_OK", "ina234_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba7e4a42e3b6dd63708c64cf3db6f69566", null ],
+      [ "STATUS_TimeOut", "ina234_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70bafddcb825c6c18107885a7d663dcf38e7", null ]
+    ] ],
+    [ "__INA234_readTwoBytes", "ina234_8h.html#aa36cf3308ef4df72ddf8a78edff23556", null ],
+    [ "__INA234_writeTwoBytes", "ina234_8h.html#ac08e0ed8b382a2dd193753a2b302bae1", null ],
+    [ "INA234_alert_init", "ina234_8h.html#afb44437883ad8f8d08aaf695815da7ed", null ],
+    [ "INA234_getADCRange", "ina234_8h.html#ab9f2d8b23628fb6b060f837b9a4f71a5", null ],
+    [ "INA234_getAlertSource", "ina234_8h.html#a52cc3b785dea1f5af6f0803f02fcefdb", null ],
+    [ "INA234_getBusVoltage", "ina234_8h.html#a97ec39b6399d3ab449e499a57668748d", null ],
+    [ "INA234_getCurrent", "ina234_8h.html#a825a355395fef312e3642f9f8ca6463c", null ],
+    [ "INA234_getDevID", "ina234_8h.html#a88ff1503798836270a41d3b9f3913ca7", null ],
+    [ "INA234_getErrors", "ina234_8h.html#a14a3383eba06ce784ed526585a0cef9a", null ],
+    [ "INA234_getManID", "ina234_8h.html#ae646f51adec51af1aa6377c3dffeeb6a", null ],
+    [ "INA234_getMode", "ina234_8h.html#a4af7c34341c14b8bfb40daf0665a766c", null ],
+    [ "INA234_getNumberOfADCSamples", "ina234_8h.html#acda6b9d24c842d73ffca341ce39ac707", null ],
+    [ "INA234_getPower", "ina234_8h.html#a163121f0afcab9a5e49f419b94290f20", null ],
+    [ "INA234_getShuntVoltage", "ina234_8h.html#a256f66571357742aec8b4f0104c54b6b", null ],
+    [ "INA234_getVBusConversionTime", "ina234_8h.html#aa3f6130fa6074b931f415e9ca85f340d", null ],
+    [ "INA234_getVShuntConversionTime", "ina234_8h.html#a6afffb92bb828562997a6a5592bc141a", null ],
+    [ "INA234_init", "ina234_8h.html#a21acc30b187445a98f711a54b8678c7c", null ],
+    [ "INA234_isDataReady", "ina234_8h.html#a9637d475148409297883f05464a92e86", null ],
+    [ "INA234_readAll", "ina234_8h.html#ac7901cf62e078ff3a235839061a3608b", null ],
+    [ "INA234_resetAlert", "ina234_8h.html#a5810f9a740226a39ba5cc2afa6b64f77", null ],
+    [ "INA234_setADCRange", "ina234_8h.html#aba71c63deed65a0abdbf7269b5f382d8", null ],
+    [ "INA234_setMode", "ina234_8h.html#ac85c8e736ffae6d248971091b374d00f", null ],
+    [ "INA234_setNumberOfADCSamples", "ina234_8h.html#a84ff6173bf6cfa44348ba259a503c804", null ],
+    [ "INA234_setVBusConversionTime", "ina234_8h.html#a94ec7dc7cd10748c4ed822266174d0ff", null ],
+    [ "INA234_setVShuntConversionTime", "ina234_8h.html#ad19627414a2465c9cf1fac54f54eaa39", null ],
+    [ "INA234_SoftResetAll", "ina234_8h.html#af3d939ea27371b17fd265f19957234b2", null ]
+];
