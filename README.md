@@ -35,7 +35,7 @@ Is it helpfull?
 
 ## Quick Start
 
-1. Downoad the library source from the [latest release](http://github.com/smotlaq/ina234/releases/latest)
+1. Download the library source from the [latest release](http://github.com/smotlaq/ina234/releases/latest)
 
 2. Copy `ina234.c` and `ina234.h` file to your project directory and add them to your IDE if necessary.
 
