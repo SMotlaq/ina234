@@ -4,11 +4,11 @@
 
 # INA234 HAL Based Library
 
+The INA234 device is a 12-bit digital current monitor with an I2C/SMBus-compatible interface that is compliant with a wide range of digital bus voltages such as 1.2 V, 1.8 V, 3.3 V, and 5.0 V. The device monitors the voltage across an external sense resistor and reports values for current, bus voltage, and power. ([Click for more info](https://www.ti.com/product/INA234))
+
 <p align="center">
   <img src="https://github.com/SMotlaq/ina234/blob/images/images/all.png"/>
 </p>
-
-The INA234 device is a 12-bit digital current monitor with an I2C/SMBus-compatible interface that is compliant with a wide range of digital bus voltages such as 1.2 V, 1.8 V, 3.3 V, and 5.0 V. The device monitors the voltage across an external sense resistor and reports values for current, bus voltage, and power. ([Click for more info](https://www.ti.com/product/INA234))
 
 This library is a software library that works with the INA234 current, voltage, and power monitor chip. This library provides a convenient and efficient way to access the I2C interfaces of the chip, allowing developers to easily integrate this power meter into their systems.
 
