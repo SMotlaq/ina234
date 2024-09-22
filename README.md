@@ -12,6 +12,10 @@ The library is designed to be easy to use and provides a simple, intuitive API f
 
 With this library, developers can quickly and easily integrate the INA234 into their systems, enabling them to take full advantage of the chip's capabilities.
 
+<p align="center">
+  <img src="https://github.com/SMotlaq/ina234/blob/images/images/all.png"/>
+</p>
+
 ## Key Features
 
 * Easy-to-use API for accessing the I2C interfaces of the INA234
@@ -21,6 +25,10 @@ With this library, developers can quickly and easily integrate the INA234 into t
 ## Documentations
 
 The full documents are available [here](https://smotlaq.github.io/ina234/)
+
+## Schematic Symbol and Footprint
+
+Footprint and schematic symbols are available in [my Altium library](https://github.com/SMotlaq/altium-library).
 
 ## Donate
 Is it helpfull?
